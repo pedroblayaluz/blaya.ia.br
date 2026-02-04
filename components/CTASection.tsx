@@ -45,7 +45,7 @@ export const CTASection = () => {
   return (
     <section
       ref={sectionRef}
-      className="min-h-screen bg-black py-20 px-4 md:px-8 relative overflow-hidden flex items-center justify-center"
+      className="min-h-screen py-20 px-4 md:px-8 relative overflow-hidden flex items-center justify-center bg-black/30 backdrop-blur-sm"
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl"></div>

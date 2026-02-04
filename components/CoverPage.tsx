@@ -122,6 +122,21 @@ export const CoverPage = () => {
           filter: drop-shadow(0 0 4px rgba(236, 72, 153, 0.4));
           pointer-events: none;
         }
+        .mountains-bg {
+          position: fixed;
+          bottom: -40px;
+          left: 0;
+          right: 0;
+          width: 100%;
+          object-fit: cover;
+          pointer-events: none;
+          z-index: 0;
+        }
+        @media (min-width: 768px) {
+          .mountains-bg {
+            bottom: -120px;
+          }
+        }
       `}</style>
       
       {/* Snowflakes container */}
@@ -141,12 +156,11 @@ export const CoverPage = () => {
         ))}
       </div>
 
-      {/* Mountains decoration at the bottom */}
+      {/* Mountains decoration at the bottom - Fixed background */}
       <img
         src="/mountains.png"
         alt="Mountains"
-        className="absolute left-0 right-0 w-full object-cover pointer-events-none translate-y-[30px] md:translate-y-[150px]"
-        style={{ zIndex: 1, bottom: 0 }}
+        className="mountains-bg"
       />
       
       {/* Background gradient elements */}      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">

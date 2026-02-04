@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Pedro Blaya Luz - AI/ML Solutions Architect",
   description:
     "AI/ML Solutions Architect with expertise in data science, machine learning, and software engineering",
+  icons: {
+    icon: "/mountains.ico",
+  },
 };
 
 export default function RootLayout({

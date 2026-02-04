@@ -268,7 +268,7 @@ export const ToolsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="min-h-auto bg-black py-20 px-4 md:px-8 relative overflow-hidden"
+      className="min-h-auto py-20 px-4 md:px-8 relative overflow-hidden bg-black/30 backdrop-blur-sm"
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/3 right-0 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
